@@ -28,12 +28,11 @@ public class GroundSpawner : MonoBehaviour
     private IEnumerator Start()
     {
         this.enabled = false;
-        while (!Input.GetButton("Jump") || !buttonPress)
+        while (!Input.GetButton("Jump"))
         {
-            Debug.Log("gtest ");
             yield return null;
         }
-        Debug.Log("post test");
+
         this.enabled = true;
 
         GameObject newGround9 = Instantiate(Ground9);

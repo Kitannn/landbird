@@ -13,7 +13,7 @@ public class ObstacleSpawner : MonoBehaviour
     private IEnumerator Start()
     {
         this.enabled = false;
-        while (!Input.GetButton("Jump") || !buttonPress)
+        while (!Input.GetButton("Jump"))
         {
             yield return null;
         }
